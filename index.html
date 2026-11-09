@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Camilore</title>
+  <title>Camilore Inc.</title>
   <meta name="description" content="Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer." />
   <meta name="theme-color" content="#f8fafc" />
+  <link rel="canonical" href="https://camilore.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Camilore Inc." />
+  <meta property="og:title" content="Camilore Inc." />
+  <meta property="og:description" content="Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer." />
+  <meta property="og:url" content="https://camilore.com/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -115,6 +121,11 @@
     .card h3 { margin: 0 0 10px; font-size: 1.28rem; letter-spacing: -0.02em; }
     .card p { margin: 0; color: var(--muted); line-height: 1.8; }
     .card-link { display: block; height: 100%; }
+    .card .card-tagline { margin: 0 0 10px; color: var(--text); font-weight: 700; line-height: 1.5; }
+    .card-tagline span { display: block; }
+    .card-link:not(:last-child) { height: auto; }
+    .card .card-meta { margin-top: 14px; font-size: 0.92rem; line-height: 1.6; }
+    .card-meta a { text-decoration: underline; text-underline-offset: 3px; }
     .card-link:hover h3, .card-link:focus-visible h3 { text-decoration: underline; text-underline-offset: 4px; }
     .about { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     .quote { font-size: clamp(1.35rem, 3vw, 1.9rem); line-height: 1.45; letter-spacing: -0.03em; margin: 0; }
@@ -148,7 +159,7 @@
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="#produits" data-i18n="navProducts">Produits</a>
           <a href="#apropos" data-i18n="navAbout">À propos</a>
-          <a href="jaxmaxdelta/index.html">Jax Max Delta</a>
+          <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a>
           <a href="privacy_light.html" data-i18n="navPrivacy">Confidentialité</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
@@ -197,11 +208,13 @@
         </div>
         <div class="cards">
           <article class="card">
-            <a class="card-link" href="jaxmaxdelta/index.html">
+            <a class="card-link" href="https://jaxmaxdelta.com/en/" data-jmd-path="">
               <img class="card-app-icon" src="assets/images/brand/jax_app_icon.png" alt="" aria-hidden="true" />
               <h3>Jax Max Delta</h3>
-              <p data-i18n="jmdBody">Une application iOS de sim racing avec ingénieur vocal IA, télémétrie en direct, delta de tour et gestion du garage — votre compagnon de course, du sous-sol au podium.</p>
+              <p class="card-tagline"><span data-i18n="jmdTag1">Votre mur des stands. Dans votre main.</span><span data-i18n="jmdTag2">Votre ingénieur de course. À votre oreille.</span></p>
+              <p data-i18n="jmdBody">Un compagnon de course privé, sur l’appareil, pour EA SPORTS F1 sur iPhone : préparation avant la session, coaching pendant que vous roulez et mémoire de course après.</p>
             </a>
+            <p class="card-meta"><span data-i18n="jmdParent">Un produit de Camilore Inc.</span> · <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">jaxmaxdelta.com</a> · <span data-i18n="jmdSupport">Soutien :</span> <a href="mailto:support@jaxmaxdelta.com">support@jaxmaxdelta.com</a></p>
           </article>
         </div>
       </div>
@@ -221,10 +234,10 @@
   </main>
   <footer class="footer" id="contact">
     <div class="wrap footer-inner">
-      <div data-i18n="footerCopy">© 2026 Camilore. Tous droits réservés.</div>
+      <div data-i18n="footerCopy">© 2026 Camilore Inc. Tous droits réservés.</div>
       <div class="footer-links">
         <a href="mailto:contact@camilore.com">contact@camilore.com</a>
-        <a href="jaxmaxdelta/index.html">Jax Max Delta</a>
+        <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a>
         <a href="privacy_light.html" data-i18n="navPrivacy">Confidentialité</a>
         <a href="#top" data-i18n="backToTop">Retour en haut</a>
       </div>
@@ -232,9 +245,9 @@
   </footer>
   <script>
     const translations = {
-      fr: {navProducts:'Produits',navAbout:'À propos',navPrivacy:'Confidentialité',navContact:'Contact',eyebrow:'Comprendre. Décider. Performer.',heroTitle:'Des outils simples et puissants pour transformer la complexité en clarté.',heroCopy:'Camilore développe des solutions mobiles et web de haute qualité qui aident les gens à mieux comprendre, décider et performer dans leur quotidien, leurs projets et leur passion.',ctaPrimary:'Découvrir nos produits',ctaSecondary:'Nous joindre',missionLabel:'Mission',missionTitle:'Des solutions pratiques, élégantes et utiles.',missionBody:'Notre approche repose sur la clarté, la fiabilité et une exécution soignée. Chaque produit doit avoir une vraie utilité, inspirer confiance et offrir une expérience simple dès le premier contact.',kpi1Title:'Simple',kpi1Body:'Des interfaces claires, sans friction inutile.',kpi2Title:'Puissant',kpi2Body:'Des outils qui aident à mieux agir.',kpi3Title:'Humain',kpi3Body:'Des produits pensés pour la vraie vie.',productsTitle:’Produits’,productsIntro:’Une base de marque conçue pour lancer des produits fiables, spécialisés et prêts à évoluer avec le temps.’,jmdBody:’Une application iOS de sim racing avec ingénieur vocal IA, télémétrie en direct, delta de tour et gestion du garage — votre compagnon de course, du sous-sol au podium.’,visionLabel:’Vision’,visionQuote:’« Les meilleurs outils ne rendent pas les choses plus compliquées. Ils rendent les bonnes décisions plus naturelles. »’,aboutLabel:’À propos de Camilore’,aboutBody:’Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer. Notre ambition est de bâtir une petite entreprise moderne, crédible et durable, capable de lancer des produits utiles dans des domaines variés.’,footerCopy:’© 2026 Camilore. Tous droits réservés.’,backToTop:’Retour en haut’},
-      en: {navProducts:'Products',navAbout:'About',navPrivacy:'Privacy',navContact:'Contact',eyebrow:'Understand. Decide. Perform.',heroTitle:'Simple, powerful tools that turn complexity into clarity.',heroCopy:'Camilore builds high-quality mobile and web solutions that help people better understand, decide, and perform in everyday life, projects, and passions.',ctaPrimary:'Discover our products',ctaSecondary:'Contact us',missionLabel:'Mission',missionTitle:'Practical, elegant, useful solutions.',missionBody:'Our approach is grounded in clarity, reliability, and thoughtful execution. Every product should serve a real purpose, inspire confidence, and feel simple from the first interaction.',kpi1Title:'Simple',kpi1Body:'Clear interfaces with no unnecessary friction.',kpi2Title:'Powerful',kpi2Body:'Tools that help people act better.',kpi3Title:'Human',kpi3Body:'Products designed for real life.',productsTitle:'Products',productsIntro:'A brand foundation built to launch reliable, specialized products that are ready to grow over time.',jmdBody:'An iOS sim racing app with AI voice engineer, live telemetry, lap delta, and garage management — your racing companion, from basement to podium.',visionLabel:'Vision',visionQuote:'”The best tools do not make things more complicated. They make the right decisions feel more natural.”',aboutLabel:'About Camilore',aboutBody:'Camilore creates simple, powerful tools to help people understand, decide, and perform. Our ambition is to build a modern, credible, and durable small business capable of launching useful products across different fields.',footerCopy:'© 2026 Camilore. All rights reserved.',backToTop:'Back to top'},
-      es: {navProducts:'Productos',navAbout:'Acerca de',navPrivacy:'Privacidad',navContact:'Contacto',eyebrow:'Comprender. Decidir. Actuar.',heroTitle:'Herramientas simples y poderosas para transformar la complejidad en claridad.',heroCopy:'Camilore desarrolla soluciones móviles y web de alta calidad que ayudan a las personas a comprender mejor, decidir y actuar en su vida diaria, sus proyectos y sus pasiones.',ctaPrimary:'Descubrir nuestros productos',ctaSecondary:'Contáctanos',missionLabel:'Misión',missionTitle:'Soluciones prácticas, elegantes y útiles.',missionBody:'Nuestro enfoque se basa en la claridad, la fiabilidad y una ejecución cuidadosa. Cada producto debe tener una utilidad real, inspirar confianza y ofrecer una experiencia simple desde el primer contacto.',kpi1Title:'Simple',kpi1Body:'Interfaces claras, sin fricción innecesaria.',kpi2Title:'Potente',kpi2Body:'Herramientas que ayudan a actuar mejor.',kpi3Title:'Humano',kpi3Body:'Productos pensados para la vida real.',productsTitle:'Productos',productsIntro:'Una base de marca diseñada para lanzar productos fiables, especializados y listos para evolucionar con el tiempo.',jmdBody:'Una app de sim racing para iOS con ingeniero de voz IA, telemetría en vivo, delta de vuelta y gestión del garaje — tu compañero de carrera, del sótano al podio.',visionLabel:'Visión',visionQuote:'« Las mejores herramientas no hacen las cosas más complicadas. Hacen que las decisiones correctas se sientan más naturales. »',aboutLabel:'Acerca de Camilore',aboutBody:'Camilore crea herramientas simples y poderosas para ayudar a las personas a comprender, decidir y actuar. Nuestra ambición es construir una pequeña empresa moderna, creíble y duradera, capaz de lanzar productos útiles en distintos ámbitos.',footerCopy:'© 2026 Camilore. Todos los derechos reservados.',backToTop:'Volver arriba'}
+      fr: {navProducts:'Produits',navAbout:'À propos',navPrivacy:'Confidentialité',navContact:'Contact',eyebrow:'Comprendre. Décider. Performer.',heroTitle:'Des outils simples et puissants pour transformer la complexité en clarté.',heroCopy:'Camilore développe des solutions mobiles et web de haute qualité qui aident les gens à mieux comprendre, décider et performer dans leur quotidien, leurs projets et leur passion.',ctaPrimary:'Découvrir nos produits',ctaSecondary:'Nous joindre',missionLabel:'Mission',missionTitle:'Des solutions pratiques, élégantes et utiles.',missionBody:'Notre approche repose sur la clarté, la fiabilité et une exécution soignée. Chaque produit doit avoir une vraie utilité, inspirer confiance et offrir une expérience simple dès le premier contact.',kpi1Title:'Simple',kpi1Body:'Des interfaces claires, sans friction inutile.',kpi2Title:'Puissant',kpi2Body:'Des outils qui aident à mieux agir.',kpi3Title:'Humain',kpi3Body:'Des produits pensés pour la vraie vie.',productsTitle:'Produits',productsIntro:'Une base de marque conçue pour lancer des produits fiables, spécialisés et prêts à évoluer avec le temps.',jmdTag1:'Votre mur des stands. Dans votre main.',jmdTag2:'Votre ingénieur de course. À votre oreille.',jmdBody:'Un compagnon de course privé, sur l’appareil, pour EA SPORTS F1 sur iPhone : préparation avant la session, coaching pendant que vous roulez et mémoire de course après.',jmdParent:'Un produit de Camilore Inc.',jmdSupport:'Soutien :',visionLabel:'Vision',visionQuote:'« Les meilleurs outils ne rendent pas les choses plus compliquées. Ils rendent les bonnes décisions plus naturelles. »',aboutLabel:'À propos de Camilore',aboutBody:'Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer. Notre ambition est de bâtir une petite entreprise moderne, crédible et durable, capable de lancer des produits utiles dans des domaines variés.',footerCopy:'© 2026 Camilore Inc. Tous droits réservés.',backToTop:'Retour en haut'},
+      en: {navProducts:'Products',navAbout:'About',navPrivacy:'Privacy',navContact:'Contact',eyebrow:'Understand. Decide. Perform.',heroTitle:'Simple, powerful tools that turn complexity into clarity.',heroCopy:'Camilore builds high-quality mobile and web solutions that help people better understand, decide, and perform in everyday life, projects, and passions.',ctaPrimary:'Discover our products',ctaSecondary:'Contact us',missionLabel:'Mission',missionTitle:'Practical, elegant, useful solutions.',missionBody:'Our approach is grounded in clarity, reliability, and thoughtful execution. Every product should serve a real purpose, inspire confidence, and feel simple from the first interaction.',kpi1Title:'Simple',kpi1Body:'Clear interfaces with no unnecessary friction.',kpi2Title:'Powerful',kpi2Body:'Tools that help people act better.',kpi3Title:'Human',kpi3Body:'Products designed for real life.',productsTitle:'Products',productsIntro:'A brand foundation built to launch reliable, specialized products that are ready to grow over time.',jmdTag1:'Your Pit Wall. In Your Hand.',jmdTag2:'Your Race Engineer. In Your Ear.',jmdBody:'A private, on-device racing companion for EA SPORTS F1 on iPhone: preparation before the session, coaching while you drive, and a race memory after.',jmdParent:'A Camilore Inc. product',jmdSupport:'Support:',visionLabel:'Vision',visionQuote:'”The best tools do not make things more complicated. They make the right decisions feel more natural.”',aboutLabel:'About Camilore',aboutBody:'Camilore creates simple, powerful tools to help people understand, decide, and perform. Our ambition is to build a modern, credible, and durable small business capable of launching useful products across different fields.',footerCopy:'© 2026 Camilore Inc. All rights reserved.',backToTop:'Back to top'},
+      es: {navProducts:'Productos',navAbout:'Acerca de',navPrivacy:'Privacidad',navContact:'Contacto',eyebrow:'Comprender. Decidir. Actuar.',heroTitle:'Herramientas simples y poderosas para transformar la complejidad en claridad.',heroCopy:'Camilore desarrolla soluciones móviles y web de alta calidad que ayudan a las personas a comprender mejor, decidir y actuar en su vida diaria, sus proyectos y sus pasiones.',ctaPrimary:'Descubrir nuestros productos',ctaSecondary:'Contáctanos',missionLabel:'Misión',missionTitle:'Soluciones prácticas, elegantes y útiles.',missionBody:'Nuestro enfoque se basa en la claridad, la fiabilidad y una ejecución cuidadosa. Cada producto debe tener una utilidad real, inspirar confianza y ofrecer una experiencia simple desde el primer contacto.',kpi1Title:'Simple',kpi1Body:'Interfaces claras, sin fricción innecesaria.',kpi2Title:'Potente',kpi2Body:'Herramientas que ayudan a actuar mejor.',kpi3Title:'Humano',kpi3Body:'Productos pensados para la vida real.',productsTitle:'Productos',productsIntro:'Una base de marca diseñada para lanzar productos fiables, especializados y listos para evolucionar con el tiempo.',jmdTag1:'Tu muro de boxes. En tu mano.',jmdTag2:'Tu ingeniero de carrera. En tu oído.',jmdBody:'Un compañero de carrera privado, en el dispositivo, para EA SPORTS F1 en iPhone: preparación antes de la sesión, coaching mientras conduces y memoria de carrera después.',jmdParent:'Un producto de Camilore Inc.',jmdSupport:'Soporte:',visionLabel:'Visión',visionQuote:'« Las mejores herramientas no hacen las cosas más complicadas. Hacen que las decisiones correctas se sientan más naturales. »',aboutLabel:'Acerca de Camilore',aboutBody:'Camilore crea herramientas simples y poderosas para ayudar a las personas a comprender, decidir y actuar. Nuestra ambición es construir una pequeña empresa moderna, creíble y duradera, capaz de lanzar productos útiles en distintos ámbitos.',footerCopy:'© 2026 Camilore Inc. Todos los derechos reservados.',backToTop:'Volver arriba'}
     };
     function setLanguage(lang) {
       const dict = translations[lang] || translations.fr;
@@ -243,6 +256,7 @@
         const key = el.getAttribute('data-i18n');
         if (dict[key]) el.textContent = dict[key];
       });
+      document.querySelectorAll('[data-jmd-path]').forEach((a) => { a.href = 'https://jaxmaxdelta.com/' + lang + '/' + a.dataset.jmdPath; });
       document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
       localStorage.setItem('camilore-lang', lang);
     }
