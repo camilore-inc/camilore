@@ -2,6 +2,16 @@
 
 The camilore.com website has no version number. Entries are dated.
 
+## 2026-11-09 — old JMD privacy page removed; JMD card uses the master icon and headline
+
+- `jaxmaxdelta/privacy.html` is deleted. The approved Jax Max Delta Privacy
+  Policy is only at jaxmaxdelta.com/{en,fr,es}/privacy.html; the old address
+  now returns 404 instead of redirecting.
+- Home (`index.html`, `index_light.html`): the Jax Max Delta card shows the app's
+  1024 px master icon and the site's headline, "Your Race Engineer. Your Pit
+  Wall. Your Race Memory." (FR/ES equivalents), replacing "Your Pit Wall. In
+  Your Hand. / Your Race Engineer. In Your Ear."
+
 ## 2026-11 — JMD subsite redirected to jaxmaxdelta.com; JMD wording aligned with app 1.29.0; JMD privacy and support routed to jaxmaxdelta.com.
 
 - `jaxmaxdelta/index.html`, `support.html` and `privacy.html` are now redirect
