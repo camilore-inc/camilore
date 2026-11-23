@@ -2,6 +2,14 @@
 
 The camilore.com website has no version number. Entries are dated.
 
+## 2026-11-23 — Search engines notified on every push
+
+- Google Search Console and Bing Webmaster Tools set up (verification file
+  `googleb770fc204538b5b8.html`, sitemap submitted).
+- IndexNow: after each push to `main`, a GitHub Actions workflow waits for the
+  Pages deploy and sends the changed sitemap pages to Bing and the other
+  IndexNow engines (`scripts/indexnow.py`, key file at the root).
+
 ## 2026-11-22 — Real English and Spanish pages; search and sharing metadata
 
 - **Every language has its own address:** French at `/` and `/privacy.html`,
