@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- seo:start -->
+  <title>Camilore Inc. — Empresa de software de Quebec, creadora de Jax Max Delta</title>
+  <meta name="description" content="Camilore Inc. crea aplicaciones móviles y web simples y potentes para comprender, decidir y actuar mejor, entre ellas Jax Max Delta, el ingeniero de carrera para pilotos virtuales de F1." />
+  <link rel="canonical" href="https://camilore.com/es/" />
+  <link rel="alternate" hreflang="fr" href="https://camilore.com/" />
+  <link rel="alternate" hreflang="en" href="https://camilore.com/en/" />
+  <link rel="alternate" hreflang="es" href="https://camilore.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://camilore.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Camilore Inc." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_CA" />
+  <meta property="og:locale:alternate" content="en_CA" />
+  <meta property="og:url" content="https://camilore.com/es/" />
+  <meta property="og:title" content="Camilore Inc. — Empresa de software de Quebec, creadora de Jax Max Delta" />
+  <meta property="og:description" content="Camilore Inc. crea aplicaciones móviles y web simples y potentes para comprender, decidir y actuar mejor, entre ellas Jax Max Delta, el ingeniero de carrera para pilotos virtuales de F1." />
+  <meta property="og:image" content="https://camilore.com/assets/images/brand/camilore-og-1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Camilore Inc." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://camilore.com/#organization", "name": "Camilore", "legalName": "Camilore Inc.", "url": "https://camilore.com/", "logo": "https://camilore.com/apple-touch-icon.png", "description": "Camilore Inc. crea aplicaciones móviles y web simples y potentes para comprender, decidir y actuar mejor, entre ellas Jax Max Delta, el ingeniero de carrera para pilotos virtuales de F1.", "email": "contact@camilore.com", "address": {"@type": "PostalAddress", "addressRegion": "QC", "addressCountry": "CA"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "contact@camilore.com", "availableLanguage": ["French", "English", "Spanish"]}], "brand": {"@type": "Brand", "name": "Jax Max Delta", "url": "https://jaxmaxdelta.com/es/"}, "inLanguage": "es"}</script>
+  <!-- seo:end -->
+  <meta name="theme-color" content="#f8fafc" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-soft: #eef4f8;
+      --surface: #ffffff;
+      --surface-soft: #f5f7fb;
+      --line: rgba(36, 49, 66, 0.08);
+      --line-strong: rgba(36, 49, 66, 0.12);
+      --text: #243142;
+      --muted: #607086;
+      --blue: #6bb9f0;
+      --blue-soft: rgba(107, 185, 240, 0.18);
+      --coral: #f4a58a;
+      --coral-soft: rgba(244, 165, 138, 0.18);
+      --max: 1120px;
+      --radius: 28px;
+      --shadow: 0 16px 40px rgba(36, 49, 66, 0.07);
+      --shadow-soft: 0 8px 24px rgba(36, 49, 66, 0.05);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(107, 185, 240, 0.20), transparent 30%),
+        radial-gradient(circle at 88% 8%, rgba(244, 165, 138, 0.22), transparent 24%),
+        linear-gradient(180deg, #f8fafc 0%, #f5f7fb 48%, #eef4f8 100%);
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(100% - 32px, var(--max)); margin: 0 auto; }
+    .site-header {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px);
+      background: rgba(248, 250, 252, 0.82); border-bottom: 1px solid rgba(36, 49, 66, 0.06);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 84px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 14px; font-weight: 800; letter-spacing: 0.01em; font-size: 1.5rem; }
+    .brand-mark {
+      width: 20px; height: 20px; border-radius: 999px; background: linear-gradient(135deg, var(--blue), var(--coral));
+      box-shadow: 0 0 0 8px rgba(107, 185, 240, 0.08); flex: 0 0 auto;
+    }
+    .header-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .nav-links { display: flex; gap: 22px; align-items: center; color: var(--muted); font-size: 0.96rem; }
+    .nav-links a { padding: 10px 0; transition: color 0.2s ease; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--text); }
+    .lang-switcher {
+      display: inline-flex; gap: 8px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(36,49,66,0.08); box-shadow: var(--shadow-soft);
+    }
+    a.lang-btn { display: inline-block; }
+    .lang-btn {
+      border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 700; letter-spacing: 0.02em;
+      padding: 9px 12px; border-radius: 999px; cursor: pointer; transition: 0.2s ease;
+    }
+    .lang-btn:hover, .lang-btn:focus-visible { color: var(--text); background: rgba(107, 185, 240, 0.10); outline: none; }
+    .lang-btn.active { color: var(--text); background: linear-gradient(135deg, rgba(107, 185, 240, 0.30), rgba(244, 165, 138, 0.30)); }
+    .hero { padding: 86px 0 56px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 999px;
+      background: rgba(255,255,255,0.72); border: 1px solid rgba(36,49,66,0.08); color: var(--muted);
+      font-size: 0.92rem; margin-bottom: 24px; box-shadow: var(--shadow-soft);
+    }
+    .eyebrow-dot { width: 8px; height: 8px; border-radius: 999px; background: linear-gradient(135deg, var(--blue), var(--coral)); }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 30px; align-items: stretch; }
+    h1 { margin: 0; font-size: clamp(2.4rem, 5.5vw, 4.4rem); line-height: 1.02; letter-spacing: -0.045em; max-width: 11ch; }
+    .hero-copy { color: var(--muted); font-size: 1.08rem; line-height: 1.85; max-width: 62ch; margin: 24px 0 0; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 18px;
+      border-radius: 16px; border: 1px solid transparent; font-weight: 700; transition: 0.2s ease; box-shadow: var(--shadow-soft);
+    }
+    .btn-primary { background: linear-gradient(135deg, rgba(107,185,240,0.92), rgba(244,165,138,0.92)); color: var(--text); }
+    .btn-primary:hover, .btn-primary:focus-visible { transform: translateY(-1px); box-shadow: 0 14px 28px rgba(107, 185, 240, 0.16); }
+    .btn-secondary { border-color: var(--line); color: var(--text); background: rgba(255, 255, 255, 0.82); }
+    .btn-secondary:hover, .btn-secondary:focus-visible { background: #fff; }
+    .panel { background: rgba(255,255,255,0.82); border: 1px solid rgba(36,49,66,0.08); border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px; }
+    .hero-panel { display: flex; flex-direction: column; justify-content: space-between; min-height: 100%; position: relative; overflow: hidden; }
+    .hero-panel::after { content: ""; position: absolute; right: -30px; bottom: -30px; width: 180px; height: 180px; background: radial-gradient(circle, rgba(244,165,138,0.18), transparent 70%); pointer-events: none; }
+    .hero-panel::before { content: ""; position: absolute; left: -30px; top: -30px; width: 140px; height: 140px; background: radial-gradient(circle, rgba(107,185,240,0.16), transparent 70%); pointer-events: none; }
+    .mini-label { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; position: relative; z-index: 1; }
+    .hero-panel h2 { margin: 0 0 12px; font-size: 1.55rem; letter-spacing: -0.03em; position: relative; z-index: 1; }
+    .hero-panel p { color: var(--muted); line-height: 1.8; margin: 0; position: relative; z-index: 1; }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; position: relative; z-index: 1; }
+    .kpi { padding: 16px; border-radius: 20px; background: var(--surface-soft); border: 1px solid rgba(36,49,66,0.06); }
+    .kpi strong { display: block; font-size: 1.02rem; margin-bottom: 6px; }
+    .kpi span { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+    section { padding: 32px 0; }
+    .section-heading { display: flex; justify-content: space-between; gap: 18px; align-items: end; margin-bottom: 24px; }
+    .section-heading h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.4rem); letter-spacing: -0.03em; }
+    .section-heading p { margin: 0; max-width: 560px; color: var(--muted); line-height: 1.8; }
+    .cards { display: grid; grid-template-columns: 1fr; gap: 18px; max-width: 680px; }
+    .card-app-icon { width: 72px; height: 72px; display: block; margin-bottom: 16px; border-radius: 16px; }
+    .card {
+      background: rgba(255,255,255,0.88); border: 1px solid rgba(36,49,66,0.08); border-radius: 24px; padding: 24px;
+      min-height: 230px; position: relative; overflow: hidden; box-shadow: var(--shadow-soft);
+    }
+    .card::before { content: ""; position: absolute; inset: 0 auto auto 0; width: 100%; height: 3px; background: linear-gradient(90deg, rgba(107,185,240,0.85), rgba(244,165,138,0.85)); opacity: 0.9; }
+    .card .icon {
+      width: 44px; height: 44px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, rgba(107,185,240,0.14), rgba(244,165,138,0.16)); border: 1px solid rgba(36,49,66,0.06);
+      font-size: 1.15rem; margin-bottom: 16px;
+    }
+    .card h3 { margin: 0 0 10px; font-size: 1.28rem; letter-spacing: -0.02em; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.8; }
+    .card-link { display: block; height: 100%; }
+    .card .card-tagline { margin: 0 0 10px; color: var(--text); font-weight: 700; line-height: 1.5; }
+    .card-tagline span { display: block; }
+    .card-link:not(:last-child) { height: auto; }
+    .card .card-meta { margin-top: 14px; font-size: 0.92rem; line-height: 1.6; }
+    .card-meta a { text-decoration: underline; text-underline-offset: 3px; }
+    .card-link:hover h3, .card-link:focus-visible h3 { text-decoration: underline; text-underline-offset: 4px; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .quote { font-size: clamp(1.35rem, 3vw, 1.9rem); line-height: 1.45; letter-spacing: -0.03em; margin: 0; }
+    .footer { padding: 52px 0 70px; color: var(--muted); font-size: 0.95rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; border-top: 1px solid rgba(36,49,66,0.08); padding-top: 26px; }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .footer-links a:hover, .footer-links a:focus-visible { color: var(--text); }
+    @media (max-width: 920px) {
+      .hero-grid, .about, .cards { grid-template-columns: 1fr; }
+      .section-heading, .footer-inner, .nav { flex-direction: column; align-items: flex-start; }
+      .header-right { width: 100%; justify-content: space-between; }
+      .kpis { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 56px; }
+      .nav-links { gap: 14px; flex-wrap: wrap; }
+      .panel, .card { padding: 20px; }
+      .brand { font-size: 1.35rem; }
+      .header-right { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" data-i18n-aria="ariaHome" aria-label="Inicio de Camilore">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Camilore</span>
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" data-i18n-aria="ariaNav" aria-label="Navegación principal">
+          <a href="#produits" data-i18n="navProducts">Productos</a>
+          <a href="#apropos" data-i18n="navAbout">Acerca de</a>
+          <a href="https://jaxmaxdelta.com/es/" data-jmd-path="">Jax Max Delta</a>
+          <a data-href="privacy" href="/es/privacy.html" data-i18n="navPrivacy">Privacidad</a>
+          <a href="#contact" data-i18n="navContact">Contacto</a>
+        </nav>
+        <nav class="lang-switcher" data-i18n-aria="ariaLang" aria-label="Idioma">
+          <a class="lang-btn" data-lang-link="fr" hreflang="fr" lang="fr" href="/?lang=fr">FR</a>
+          <a class="lang-btn" data-lang-link="en" hreflang="en" lang="en" href="/en/">EN</a>
+          <a class="lang-btn active" data-lang-link="es" hreflang="es" lang="es" href="/es/" aria-current="page">ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span data-i18n="eyebrow">Comprender. Decidir. Actuar.</span>
+          </div>
+          <h1 data-i18n="heroTitle">Herramientas simples y poderosas para transformar la complejidad en claridad.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">Camilore desarrolla soluciones móviles y web de alta calidad que ayudan a las personas a comprender mejor, decidir y actuar en su vida diaria, sus proyectos y sus pasiones.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#produits" data-i18n="ctaPrimary">Descubrir nuestros productos</a>
+            <a class="btn btn-secondary" href="mailto:contact@camilore.com" data-i18n="ctaSecondary">Contáctanos</a>
+          </div>
+        </div>
+        <aside class="panel hero-panel" data-i18n-aria="ariaSummary" aria-label="Camilore en resumen">
+          <div>
+            <div class="mini-label" data-i18n="missionLabel">Misión</div>
+            <h2 data-i18n="missionTitle">Soluciones prácticas, elegantes y útiles.</h2>
+            <p data-i18n="missionBody">Nuestro enfoque se basa en la claridad, la fiabilidad y una ejecución cuidadosa. Cada producto debe tener una utilidad real, inspirar confianza y ofrecer una experiencia simple desde el primer contacto.</p>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><strong data-i18n="kpi1Title">Simple</strong><span data-i18n="kpi1Body">Interfaces claras, sin fricción innecesaria.</span></div>
+            <div class="kpi"><strong data-i18n="kpi2Title">Potente</strong><span data-i18n="kpi2Body">Herramientas que ayudan a actuar mejor.</span></div>
+            <div class="kpi"><strong data-i18n="kpi3Title">Humano</strong><span data-i18n="kpi3Body">Productos pensados para la vida real.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section id="produits">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><h2 data-i18n="productsTitle">Productos</h2></div>
+          <p data-i18n="productsIntro">Una base de marca diseñada para lanzar productos fiables, especializados y listos para evolucionar con el tiempo.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <a class="card-link" href="https://jaxmaxdelta.com/es/" data-jmd-path="">
+              <img class="card-app-icon" src="/assets/images/brand/jax_app_icon.png" alt="" aria-hidden="true" />
+              <h3>Jax Max Delta</h3>
+              <p class="card-tagline"><span data-i18n="jmdTag1">Tu ingeniero de carrera. Tu muro de boxes. Tu memoria de carrera.</span></p>
+              <p data-i18n="jmdBody">Un compañero de carrera privado, en el dispositivo, para EA SPORTS F1 en iPhone: preparación antes de la sesión, coaching mientras conduces y memoria de carrera después.</p>
+            </a>
+            <p class="card-meta"><span data-i18n="jmdParent">Un producto de Camilore Inc.</span> · <a href="https://jaxmaxdelta.com/es/" data-jmd-path="">jaxmaxdelta.com</a> · <span data-i18n="jmdSupport">Soporte:</span> <a href="mailto:support@jaxmaxdelta.com">support@jaxmaxdelta.com</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="apropos">
+      <div class="wrap about">
+        <div class="panel">
+          <div class="mini-label" data-i18n="visionLabel">Visión</div>
+          <p class="quote" data-i18n="visionQuote">« Las mejores herramientas no hacen las cosas más complicadas. Hacen que las decisiones correctas se sientan más naturales. »</p>
+        </div>
+        <div class="panel">
+          <div class="mini-label" data-i18n="aboutLabel">Acerca de Camilore</div>
+          <p data-i18n="aboutBody">Camilore crea herramientas simples y poderosas para ayudar a las personas a comprender, decidir y actuar. Nuestra ambición es construir una pequeña empresa moderna, creíble y duradera, capaz de lanzar productos útiles en distintos ámbitos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="wrap footer-inner">
+      <div data-i18n="footerCopy">© 2026 Camilore Inc. Todos los derechos reservados.</div>
+      <div class="footer-links">
+        <a href="mailto:contact@camilore.com">contact@camilore.com</a>
+        <a href="https://jaxmaxdelta.com/es/" data-jmd-path="">Jax Max Delta</a>
+        <a data-href="privacy" href="/es/privacy.html" data-i18n="navPrivacy">Privacidad</a>
+        <a href="#top" data-i18n="backToTop">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+  <!-- prefs:start -->
+  <script>
+    // Remember the language a visitor picks. Only an explicit earlier choice
+    // moves a visitor off the French root; there is no browser-language
+    // redirect, so every language URL serves exactly the language it promises.
+    (function () {
+      var links = document.querySelectorAll('[data-lang-link]');
+      links.forEach(function (a) { a.addEventListener('click', function () {
+        try { localStorage.setItem('camilore-lang', a.getAttribute('data-lang-link')); } catch (e) {}
+      }); });
+      var here = document.documentElement.lang, saved = '';
+      try { saved = localStorage.getItem('camilore-lang') || ''; } catch (e) {}
+      if (here === 'fr' && (saved === 'en' || saved === 'es') && !/[?&]lang=fr\b/.test(location.search)) {
+        var target = document.querySelector('[data-lang-link="' + saved + '"]');
+        if (target) location.replace(target.getAttribute('href') + location.hash);
+      }
+    })();
+  </script>
+  <!-- prefs:end -->
+</body>
+</html>

@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Camilore Inc.</title>
-  <meta name="description" content="Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer." />
-  <meta name="theme-color" content="#f8fafc" />
+  <!-- seo:start -->
+  <title>Camilore Inc. — Entreprise de logiciels du Québec, créatrice de Jax Max Delta</title>
+  <meta name="description" content="Camilore Inc. crée des applications mobiles et web simples et puissantes pour mieux comprendre, décider et performer, dont Jax Max Delta, l’ingénieur de course pour les pilotes virtuels F1." />
   <link rel="canonical" href="https://camilore.com/" />
+  <link rel="alternate" hreflang="fr" href="https://camilore.com/" />
+  <link rel="alternate" hreflang="en" href="https://camilore.com/en/" />
+  <link rel="alternate" hreflang="es" href="https://camilore.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://camilore.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Camilore Inc." />
-  <meta property="og:title" content="Camilore Inc." />
-  <meta property="og:description" content="Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer." />
+  <meta property="og:locale" content="fr_CA" />
+  <meta property="og:locale:alternate" content="en_CA" />
+  <meta property="og:locale:alternate" content="es_ES" />
   <meta property="og:url" content="https://camilore.com/" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta property="og:title" content="Camilore Inc. — Entreprise de logiciels du Québec, créatrice de Jax Max Delta" />
+  <meta property="og:description" content="Camilore Inc. crée des applications mobiles et web simples et puissantes pour mieux comprendre, décider et performer, dont Jax Max Delta, l’ingénieur de course pour les pilotes virtuels F1." />
+  <meta property="og:image" content="https://camilore.com/assets/images/brand/camilore-og-1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Camilore Inc." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://camilore.com/#organization", "name": "Camilore", "legalName": "Camilore Inc.", "url": "https://camilore.com/", "logo": "https://camilore.com/apple-touch-icon.png", "description": "Camilore Inc. crée des applications mobiles et web simples et puissantes pour mieux comprendre, décider et performer, dont Jax Max Delta, l’ingénieur de course pour les pilotes virtuels F1.", "email": "contact@camilore.com", "address": {"@type": "PostalAddress", "addressRegion": "QC", "addressCountry": "CA"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "contact@camilore.com", "availableLanguage": ["French", "English", "Spanish"]}], "brand": {"@type": "Brand", "name": "Jax Max Delta", "url": "https://jaxmaxdelta.com/fr/"}, "inLanguage": "fr"}</script>
+  <!-- seo:end -->
+  <meta name="theme-color" content="#f8fafc" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <style>
     :root {
       --bg: #f8fafc;
@@ -66,6 +81,7 @@
       display: inline-flex; gap: 8px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.72);
       border: 1px solid rgba(36,49,66,0.08); box-shadow: var(--shadow-soft);
     }
+    a.lang-btn { display: inline-block; }
     .lang-btn {
       border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 700; letter-spacing: 0.02em;
       padding: 9px 12px; border-radius: 999px; cursor: pointer; transition: 0.2s ease;
@@ -151,23 +167,23 @@
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Accueil Camilore">
+      <a class="brand" href="#top" data-i18n-aria="ariaHome" aria-label="Accueil Camilore">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>Camilore</span>
       </a>
       <div class="header-right">
-        <nav class="nav-links" aria-label="Navigation principale">
+        <nav class="nav-links" data-i18n-aria="ariaNav" aria-label="Navigation principale">
           <a href="#produits" data-i18n="navProducts">Produits</a>
           <a href="#apropos" data-i18n="navAbout">À propos</a>
-          <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a>
-          <a href="privacy_light.html" data-i18n="navPrivacy">Confidentialité</a>
+          <a href="https://jaxmaxdelta.com/fr/" data-jmd-path="">Jax Max Delta</a>
+          <a data-href="privacy" href="/privacy.html" data-i18n="navPrivacy">Confidentialité</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
-        <div class="lang-switcher" aria-label="Sélecteur de langue">
-          <button class="lang-btn active" data-lang="fr" type="button">FR</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
-          <button class="lang-btn" data-lang="es" type="button">ES</button>
-        </div>
+        <nav class="lang-switcher" data-i18n-aria="ariaLang" aria-label="Langue">
+          <a class="lang-btn active" data-lang-link="fr" hreflang="fr" lang="fr" href="/?lang=fr" aria-current="page">FR</a>
+          <a class="lang-btn" data-lang-link="en" hreflang="en" lang="en" href="/en/">EN</a>
+          <a class="lang-btn" data-lang-link="es" hreflang="es" lang="es" href="/es/">ES</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -186,7 +202,7 @@
             <a class="btn btn-secondary" href="mailto:contact@camilore.com" data-i18n="ctaSecondary">Nous joindre</a>
           </div>
         </div>
-        <aside class="panel hero-panel" aria-label="Résumé de la marque Camilore">
+        <aside class="panel hero-panel" data-i18n-aria="ariaSummary" aria-label="Résumé de la marque Camilore">
           <div>
             <div class="mini-label" data-i18n="missionLabel">Mission</div>
             <h2 data-i18n="missionTitle">Des solutions pratiques, élégantes et utiles.</h2>
@@ -208,13 +224,13 @@
         </div>
         <div class="cards">
           <article class="card">
-            <a class="card-link" href="https://jaxmaxdelta.com/en/" data-jmd-path="">
-              <img class="card-app-icon" src="assets/images/brand/jax_app_icon.png" alt="" aria-hidden="true" />
+            <a class="card-link" href="https://jaxmaxdelta.com/fr/" data-jmd-path="">
+              <img class="card-app-icon" src="/assets/images/brand/jax_app_icon.png" alt="" aria-hidden="true" />
               <h3>Jax Max Delta</h3>
               <p class="card-tagline"><span data-i18n="jmdTag1">Votre ingénieur de course. Votre mur des stands. Votre mémoire de course.</span></p>
               <p data-i18n="jmdBody">Un compagnon de course privé, sur l’appareil, pour EA SPORTS F1 sur iPhone : préparation avant la session, coaching pendant que vous roulez et mémoire de course après.</p>
             </a>
-            <p class="card-meta"><span data-i18n="jmdParent">Un produit de Camilore Inc.</span> · <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">jaxmaxdelta.com</a> · <span data-i18n="jmdSupport">Soutien :</span> <a href="mailto:support@jaxmaxdelta.com">support@jaxmaxdelta.com</a></p>
+            <p class="card-meta"><span data-i18n="jmdParent">Un produit de Camilore Inc.</span> · <a href="https://jaxmaxdelta.com/fr/" data-jmd-path="">jaxmaxdelta.com</a> · <span data-i18n="jmdSupport">Soutien :</span> <a href="mailto:support@jaxmaxdelta.com">support@jaxmaxdelta.com</a></p>
           </article>
         </div>
       </div>
@@ -227,7 +243,7 @@
         </div>
         <div class="panel">
           <div class="mini-label" data-i18n="aboutLabel">À propos de Camilore</div>
-          <p data-i18n="aboutBody">Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer. Notre ambition est de bâtir une petite entreprise moderne, crédible et durable, capable de lancer des produits utiles dans des domaines variés, du sim racing à la finance personnelle.</p>
+          <p data-i18n="aboutBody">Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer. Notre ambition est de bâtir une petite entreprise moderne, crédible et durable, capable de lancer des produits utiles dans des domaines variés.</p>
         </div>
       </div>
     </section>
@@ -237,34 +253,30 @@
       <div data-i18n="footerCopy">© 2026 Camilore Inc. Tous droits réservés.</div>
       <div class="footer-links">
         <a href="mailto:contact@camilore.com">contact@camilore.com</a>
-        <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a>
-        <a href="privacy_light.html" data-i18n="navPrivacy">Confidentialité</a>
+        <a href="https://jaxmaxdelta.com/fr/" data-jmd-path="">Jax Max Delta</a>
+        <a data-href="privacy" href="/privacy.html" data-i18n="navPrivacy">Confidentialité</a>
         <a href="#top" data-i18n="backToTop">Retour en haut</a>
       </div>
     </div>
   </footer>
+  <!-- prefs:start -->
   <script>
-    const translations = {
-      fr: {navProducts:'Produits',navAbout:'À propos',navPrivacy:'Confidentialité',navContact:'Contact',eyebrow:'Comprendre. Décider. Performer.',heroTitle:'Des outils simples et puissants pour transformer la complexité en clarté.',heroCopy:'Camilore développe des solutions mobiles et web de haute qualité qui aident les gens à mieux comprendre, décider et performer dans leur quotidien, leurs projets et leur passion.',ctaPrimary:'Découvrir nos produits',ctaSecondary:'Nous joindre',missionLabel:'Mission',missionTitle:'Des solutions pratiques, élégantes et utiles.',missionBody:'Notre approche repose sur la clarté, la fiabilité et une exécution soignée. Chaque produit doit avoir une vraie utilité, inspirer confiance et offrir une expérience simple dès le premier contact.',kpi1Title:'Simple',kpi1Body:'Des interfaces claires, sans friction inutile.',kpi2Title:'Puissant',kpi2Body:'Des outils qui aident à mieux agir.',kpi3Title:'Humain',kpi3Body:'Des produits pensés pour la vraie vie.',productsTitle:'Produits',productsIntro:'Une base de marque conçue pour lancer des produits fiables, spécialisés et prêts à évoluer avec le temps.',jmdTag1:'Votre ingénieur de course. Votre mur des stands. Votre mémoire de course.',jmdBody:'Un compagnon de course privé, sur l’appareil, pour EA SPORTS F1 sur iPhone : préparation avant la session, coaching pendant que vous roulez et mémoire de course après.',jmdParent:'Un produit de Camilore Inc.',jmdSupport:'Soutien :',visionLabel:'Vision',visionQuote:'« Les meilleurs outils ne rendent pas les choses plus compliquées. Ils rendent les bonnes décisions plus naturelles. »',aboutLabel:'À propos de Camilore',aboutBody:'Camilore crée des outils simples et puissants pour mieux comprendre, décider et performer. Notre ambition est de bâtir une petite entreprise moderne, crédible et durable, capable de lancer des produits utiles dans des domaines variés.',footerCopy:'© 2026 Camilore Inc. Tous droits réservés.',backToTop:'Retour en haut'},
-      en: {navProducts:'Products',navAbout:'About',navPrivacy:'Privacy',navContact:'Contact',eyebrow:'Understand. Decide. Perform.',heroTitle:'Simple, powerful tools that turn complexity into clarity.',heroCopy:'Camilore builds high-quality mobile and web solutions that help people better understand, decide, and perform in everyday life, projects, and passions.',ctaPrimary:'Discover our products',ctaSecondary:'Contact us',missionLabel:'Mission',missionTitle:'Practical, elegant, useful solutions.',missionBody:'Our approach is grounded in clarity, reliability, and thoughtful execution. Every product should serve a real purpose, inspire confidence, and feel simple from the first interaction.',kpi1Title:'Simple',kpi1Body:'Clear interfaces with no unnecessary friction.',kpi2Title:'Powerful',kpi2Body:'Tools that help people act better.',kpi3Title:'Human',kpi3Body:'Products designed for real life.',productsTitle:'Products',productsIntro:'A brand foundation built to launch reliable, specialized products that are ready to grow over time.',jmdTag1:'Your Race Engineer. Your Pit Wall. Your Race Memory.',jmdBody:'A private, on-device racing companion for EA SPORTS F1 on iPhone: preparation before the session, coaching while you drive, and a race memory after.',jmdParent:'A Camilore Inc. product',jmdSupport:'Support:',visionLabel:'Vision',visionQuote:'”The best tools do not make things more complicated. They make the right decisions feel more natural.”',aboutLabel:'About Camilore',aboutBody:'Camilore creates simple, powerful tools to help people understand, decide, and perform. Our ambition is to build a modern, credible, and durable small business capable of launching useful products across different fields.',footerCopy:'© 2026 Camilore Inc. All rights reserved.',backToTop:'Back to top'},
-      es: {navProducts:'Productos',navAbout:'Acerca de',navPrivacy:'Privacidad',navContact:'Contacto',eyebrow:'Comprender. Decidir. Actuar.',heroTitle:'Herramientas simples y poderosas para transformar la complejidad en claridad.',heroCopy:'Camilore desarrolla soluciones móviles y web de alta calidad que ayudan a las personas a comprender mejor, decidir y actuar en su vida diaria, sus proyectos y sus pasiones.',ctaPrimary:'Descubrir nuestros productos',ctaSecondary:'Contáctanos',missionLabel:'Misión',missionTitle:'Soluciones prácticas, elegantes y útiles.',missionBody:'Nuestro enfoque se basa en la claridad, la fiabilidad y una ejecución cuidadosa. Cada producto debe tener una utilidad real, inspirar confianza y ofrecer una experiencia simple desde el primer contacto.',kpi1Title:'Simple',kpi1Body:'Interfaces claras, sin fricción innecesaria.',kpi2Title:'Potente',kpi2Body:'Herramientas que ayudan a actuar mejor.',kpi3Title:'Humano',kpi3Body:'Productos pensados para la vida real.',productsTitle:'Productos',productsIntro:'Una base de marca diseñada para lanzar productos fiables, especializados y listos para evolucionar con el tiempo.',jmdTag1:'Tu ingeniero de carrera. Tu muro de boxes. Tu memoria de carrera.',jmdBody:'Un compañero de carrera privado, en el dispositivo, para EA SPORTS F1 en iPhone: preparación antes de la sesión, coaching mientras conduces y memoria de carrera después.',jmdParent:'Un producto de Camilore Inc.',jmdSupport:'Soporte:',visionLabel:'Visión',visionQuote:'« Las mejores herramientas no hacen las cosas más complicadas. Hacen que las decisiones correctas se sientan más naturales. »',aboutLabel:'Acerca de Camilore',aboutBody:'Camilore crea herramientas simples y poderosas para ayudar a las personas a comprender, decidir y actuar. Nuestra ambición es construir una pequeña empresa moderna, creíble y duradera, capaz de lanzar productos útiles en distintos ámbitos.',footerCopy:'© 2026 Camilore Inc. Todos los derechos reservados.',backToTop:'Volver arriba'}
-    };
-    function setLanguage(lang) {
-      const dict = translations[lang] || translations.fr;
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const key = el.getAttribute('data-i18n');
-        if (dict[key]) el.textContent = dict[key];
-      });
-      document.querySelectorAll('[data-jmd-path]').forEach((a) => { a.href = 'https://jaxmaxdelta.com/' + lang + '/' + a.dataset.jmdPath; });
-      document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
-      localStorage.setItem('camilore-lang', lang);
-    }
-    document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
-    const savedLang = localStorage.getItem('camilore-lang');
-    const browserLang = navigator.language.slice(0, 2);
-    const initialLang = translations[savedLang] ? savedLang : (translations[browserLang] ? browserLang : 'fr');
-    setLanguage(initialLang);
+    // Remember the language a visitor picks. Only an explicit earlier choice
+    // moves a visitor off the French root; there is no browser-language
+    // redirect, so every language URL serves exactly the language it promises.
+    (function () {
+      var links = document.querySelectorAll('[data-lang-link]');
+      links.forEach(function (a) { a.addEventListener('click', function () {
+        try { localStorage.setItem('camilore-lang', a.getAttribute('data-lang-link')); } catch (e) {}
+      }); });
+      var here = document.documentElement.lang, saved = '';
+      try { saved = localStorage.getItem('camilore-lang') || ''; } catch (e) {}
+      if (here === 'fr' && (saved === 'en' || saved === 'es') && !/[?&]lang=fr\b/.test(location.search)) {
+        var target = document.querySelector('[data-lang-link="' + saved + '"]');
+        if (target) location.replace(target.getAttribute('href') + location.hash);
+      }
+    })();
   </script>
+  <!-- prefs:end -->
 </body>
 </html>

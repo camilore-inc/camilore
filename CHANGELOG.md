@@ -2,6 +2,32 @@
 
 The camilore.com website has no version number. Entries are dated.
 
+## 2026-11-22 — Real English and Spanish pages; search and sharing metadata
+
+- **Every language has its own address:** French at `/` and `/privacy.html`,
+  English at `/en/`, Spanish at `/es/`. The text is in the HTML, so search
+  engines index all three languages (before, only French was indexed and the
+  other languages existed only after JavaScript ran). The FR/EN/ES switcher is
+  made of real links; a visitor's choice is remembered, and there is no
+  automatic browser-language switch.
+- **Built by `python3 scripts/build_pages.py`** from the French root pages
+  (the templates) and the text in `scripts/content/home.json` and
+  `privacy.json`. Edit those, then run the script; it also writes
+  `sitemap.xml`, `robots.txt` and the redirects, and checks the result.
+- **Search and sharing:** clearer titles and descriptions in each language,
+  hreflang links between languages, `sitemap.xml` and `robots.txt`, a
+  1200×630 sharing image (`assets/images/brand/camilore-og-1200x630.png`, from
+  `scripts/og-card.html`), and Schema.org Organization data (Camilore Inc.,
+  Québec, contact, Jax Max Delta as its brand) with the same identifier that
+  jaxmaxdelta.com now uses for its publisher.
+- **Duplicates removed:** `index_light.html` and `privacy_light.html` were exact
+  copies of the pages; they now redirect to them (`noindex`), and nothing links
+  to them.
+- Fixes: the French "À propos" text in the HTML matched the current wording
+  only after JavaScript ran (it still mentioned personal finance); the English
+  vision quote opened with a closing quote mark; accessibility labels are now
+  translated.
+
 ## 2026-11-09 — old JMD privacy page removed; JMD card uses the master icon and headline
 
 - `jaxmaxdelta/privacy.html` is deleted. The approved Jax Max Delta Privacy

@@ -3,124 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Camilore Inc. · Privacy Policy</title>
-  <meta name="description" content="Politique de confidentialité du site web de Camilore Inc. (camilore.com), en français, anglais et espagnol." />
+  <title>Camilore Inc.</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta http-equiv="refresh" content="0; url=/privacy.html" />
   <link rel="canonical" href="https://camilore.com/privacy.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Camilore Inc." />
-  <meta property="og:title" content="Camilore Inc. · Privacy Policy" />
-  <meta property="og:description" content="Politique de confidentialité du site web de Camilore Inc. (camilore.com)." />
-  <meta property="og:url" content="https://camilore.com/privacy.html" />
-  <meta name="theme-color" content="#f8fafc" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <style>
-    :root {
-      --bg: #f8fafc; --bg-soft: #eef4f8; --surface: #ffffff; --surface-soft: #f5f7fb; --line: rgba(36, 49, 66, 0.08);
-      --text: #243142; --muted: #607086; --blue: #6bb9f0; --coral: #f4a58a; --max: 960px; --radius: 28px;
-      --shadow: 0 16px 40px rgba(36, 49, 66, 0.07); --shadow-soft: 0 8px 24px rgba(36, 49, 66, 0.05);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text);
-      background: radial-gradient(circle at top left, rgba(107, 185, 240, 0.18), transparent 28%), radial-gradient(circle at 84% 10%, rgba(244, 165, 138, 0.18), transparent 22%), linear-gradient(180deg, #f8fafc 0%, #f5f7fb 50%, #eef4f8 100%); min-height: 100vh;
-    }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(100% - 32px, var(--max)); margin: 0 auto; }
-    .site-header { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); background: rgba(248, 250, 252, 0.84); border-bottom: 1px solid rgba(36, 49, 66, 0.06); }
-    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 84px; gap: 16px; flex-wrap: wrap; }
-    .brand { display: flex; align-items: center; gap: 14px; font-weight: 800; font-size: 1.5rem; letter-spacing: 0.01em; }
-    .brand-mark { width: 20px; height: 20px; border-radius: 999px; background: linear-gradient(135deg, var(--blue), var(--coral)); box-shadow: 0 0 0 8px rgba(107,185,240,0.08); flex: 0 0 auto; }
-    .header-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-    .nav-links { display: flex; gap: 22px; align-items: center; color: var(--muted); font-size: 0.96rem; }
-    .nav-links a:hover, .nav-links a:focus-visible { color: var(--text); }
-    .lang-switcher { display: inline-flex; gap: 8px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.75); border: 1px solid rgba(36,49,66,0.08); box-shadow: var(--shadow-soft); }
-    .lang-btn { border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 9px 12px; border-radius: 999px; cursor: pointer; }
-    .lang-btn.active { color: var(--text); background: linear-gradient(135deg, rgba(107,185,240,0.30), rgba(244,165,138,0.30)); }
-    .hero { padding: 72px 0 24px; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.75); border: 1px solid rgba(36,49,66,0.08); color: var(--muted); font-size: 0.92rem; margin-bottom: 20px; box-shadow: var(--shadow-soft); }
-    .eyebrow-dot { width: 8px; height: 8px; border-radius: 999px; background: linear-gradient(135deg, var(--blue), var(--coral)); }
-    h1 { margin: 0 0 14px; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.04; letter-spacing: -0.04em; }
-    .intro { color: var(--muted); max-width: 760px; line-height: 1.82; font-size: 1.04rem; }
-    .panel { background: rgba(255,255,255,0.88); border: 1px solid rgba(36,49,66,0.08); border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px; margin: 24px 0 56px; }
-    h2 { margin: 34px 0 10px; font-size: 1.3rem; letter-spacing: -0.02em; }
-    p, li { color: var(--muted); line-height: 1.85; font-size: 1rem; }
-    strong { color: var(--text); }
-    ul { padding-left: 22px; }
-    .footer { padding: 28px 0 60px; color: var(--muted); font-size: 0.95rem; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; border-top: 1px solid rgba(36,49,66,0.08); padding-top: 26px; flex-wrap: wrap; }
-    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-    @media (max-width: 760px) {
-      .nav, .footer-inner { flex-direction: column; align-items: flex-start; }
-      .header-right { width: 100%; justify-content: space-between; }
-      .nav-links { flex-wrap: wrap; gap: 14px; }
-      .panel { padding: 22px; }
-    }
-  </style>
+  <script>window.location.replace('/privacy.html' + window.location.hash);</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav">
-      <a class="brand" href="index_light.html" aria-label="Camilore home"><span class="brand-mark" aria-hidden="true"></span><span>Camilore</span></a>
-      <div class="header-right">
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="index_light.html" data-i18n="navHome">Accueil</a>
-          <a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a>
-          <a href="privacy_light.html" data-i18n="navPrivacy">Confidentialité</a>
-        </nav>
-        <div class="lang-switcher" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="fr" type="button">FR</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
-          <button class="lang-btn" data-lang="es" type="button">ES</button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main class="wrap">
-    <section class="hero">
-      <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">Confiance, clarté et respect de vos données</span></div>
-      <h1 data-i18n="title">Politique de confidentialité</h1>
-      <p class="intro" data-i18n="intro">Cette page explique comment Camilore Inc. collecte, utilise, protège et conserve les données liées à son site web d’entreprise, camilore.com.</p>
-    </section>
-    <section class="panel">
-      <p data-i18n="updated"><strong>Dernière mise à jour :</strong> 2026-11-09</p>
-      <h2 data-i18n="s1Title">1. Données que nous pouvons recueillir</h2>
-      <p data-i18n="s1Body">Selon le produit utilisé, Camilore peut recueillir des données techniques nécessaires au bon fonctionnement du service, comme des informations sur l’appareil, l’application, les erreurs, les performances ou certaines données fournies volontairement par l’utilisateur.</p>
-      <h2 data-i18n="s2Title">2. Comment ces données sont utilisées</h2>
-      <p data-i18n="s2Body">Les données sont utilisées pour fournir le service, améliorer la stabilité, corriger les bogues, comprendre l’utilisation générale du produit et offrir une meilleure expérience utilisateur.</p>
-      <h2 data-i18n="s3Title">3. Jax Max Delta</h2>
-      <p><span data-i18n="s3Body">Cette politique ne couvre pas l’application Jax Max Delta. Les pratiques de confidentialité de Jax Max Delta sont décrites à</span> <a href="https://jaxmaxdelta.com/en/privacy.html" data-jmd-path="privacy.html">jaxmaxdelta.com/privacy</a>. <span data-i18n="s3Contact">Questions :</span> <a href="mailto:support@jaxmaxdelta.com">support@jaxmaxdelta.com</a>.</p>
-      <h2 data-i18n="s4Title">4. Partage des données</h2>
-      <p data-i18n="s4Body">Camilore ne vend pas vos données personnelles. Les données peuvent être partagées uniquement avec des fournisseurs techniques nécessaires à l’hébergement, à l’analyse, au diagnostic ou au bon fonctionnement du service, lorsque cela s’applique.</p>
-      <h2 data-i18n="s5Title">5. Conservation et sécurité</h2>
-      <p data-i18n="s5Body">Nous prenons des mesures raisonnables pour protéger les données contre l’accès non autorisé, la perte, la divulgation ou l’altération. Les données sont conservées seulement pendant la durée nécessaire aux fins prévues ou selon les exigences légales applicables.</p>
-      <h2 data-i18n="s6Title">6. Vos choix et vos droits</h2>
-      <p data-i18n="s6Body">Vous pouvez demander des précisions sur les données vous concernant, demander une correction ou demander la suppression de certaines données lorsque cela est raisonnablement possible et compatible avec nos obligations légales et techniques.</p>
-      <h2 data-i18n="s7Title">7. Liens externes et services tiers</h2>
-      <p data-i18n="s7Body">Nos sites ou produits peuvent contenir des liens vers des services tiers. Camilore n’est pas responsable des pratiques de confidentialité de ces sites ou services externes.</p>
-      <h2 data-i18n="s8Title">8. Modifications</h2>
-      <p data-i18n="s8Body">Cette politique peut être mise à jour de temps à autre. La version la plus récente sera toujours publiée sur cette page avec la date de mise à jour.</p>
-      <h2 data-i18n="s9Title">9. Contact</h2>
-      <p data-i18n="s9Body">Pour toute question relative à la confidentialité, vous pouvez écrire à <a href="mailto:contact@camilore.com">contact@camilore.com</a>.</p>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div data-i18n="footerCopy">© 2026 Camilore Inc. Tous droits réservés.</div>
-      <div class="footer-links"><a href="index_light.html" data-i18n="footerHome">Accueil</a><a href="https://jaxmaxdelta.com/en/" data-jmd-path="">Jax Max Delta</a></div>
-    </div>
-  </footer>
-  <script>
-    const translations = {
-      fr: {navHome:'Accueil',navPrivacy:'Confidentialité',eyebrow:'Confiance, clarté et respect de vos données',title:'Politique de confidentialité',intro:'Cette page explique comment Camilore Inc. collecte, utilise, protège et conserve les données liées à son site web d’entreprise, camilore.com.',updated:'Dernière mise à jour : 2026-11-09',s1Title:'1. Données que nous pouvons recueillir',s1Body:'Selon le produit utilisé, Camilore peut recueillir des données techniques nécessaires au bon fonctionnement du service, comme des informations sur l’appareil, l’application, les erreurs, les performances ou certaines données fournies volontairement par l’utilisateur.',s2Title:'2. Comment ces données sont utilisées',s2Body:'Les données sont utilisées pour fournir le service, améliorer la stabilité, corriger les bogues, comprendre l’utilisation générale du produit et offrir une meilleure expérience utilisateur.',s3Title:'3. Jax Max Delta',s3Body:'Cette politique ne couvre pas l’application Jax Max Delta. Les pratiques de confidentialité de Jax Max Delta sont décrites à',s3Contact:'Questions :',s4Title:'4. Partage des données',s4Body:'Camilore ne vend pas vos données personnelles. Les données peuvent être partagées uniquement avec des fournisseurs techniques nécessaires à l’hébergement, à l’analyse, au diagnostic ou au bon fonctionnement du service, lorsque cela s’applique.',s5Title:'5. Conservation et sécurité',s5Body:'Nous prenons des mesures raisonnables pour protéger les données contre l’accès non autorisé, la perte, la divulgation ou l’altération. Les données sont conservées seulement pendant la durée nécessaire aux fins prévues ou selon les exigences légales applicables.',s6Title:'6. Vos choix et vos droits',s6Body:'Vous pouvez demander des précisions sur les données vous concernant, demander une correction ou demander la suppression de certaines données lorsque cela est raisonnablement possible et compatible avec nos obligations légales et techniques.',s7Title:'7. Liens externes et services tiers',s7Body:'Nos sites ou produits peuvent contenir des liens vers des services tiers. Camilore n’est pas responsable des pratiques de confidentialité de ces sites ou services externes.',s8Title:'8. Modifications',s8Body:'Cette politique peut être mise à jour de temps à autre. La version la plus récente sera toujours publiée sur cette page avec la date de mise à jour.',s9Title:'9. Contact',s9Body:'Pour toute question relative à la confidentialité, vous pouvez écrire à contact@camilore.com.',footerCopy:'© 2026 Camilore Inc. Tous droits réservés.',footerHome:'Accueil'},
-      en: {navHome:'Home',navPrivacy:'Privacy',eyebrow:'Trust, clarity, and respect for your data',title:'Privacy Policy',intro:'This page explains how Camilore Inc. collects, uses, protects, and stores data related to its corporate website, camilore.com.',updated:'Last updated: 2026-11-09',s1Title:'1. Data we may collect',s1Body:'Depending on the product used, Camilore may collect technical data required for the service to function properly, such as device information, app information, errors, performance data, or information voluntarily provided by the user.',s2Title:'2. How this data is used',s2Body:'Data is used to provide the service, improve stability, fix bugs, understand general product usage, and provide a better user experience.',s3Title:'3. Jax Max Delta',s3Body:'This policy does not cover the Jax Max Delta app. Jax Max Delta’s privacy practices are described at',s3Contact:'Questions:',s4Title:'4. Data sharing',s4Body:'Camilore does not sell your personal data. Data may be shared only with technical providers required for hosting, analytics, diagnostics, or proper service operation, where applicable.',s5Title:'5. Retention and security',s5Body:'We take reasonable measures to protect data against unauthorized access, loss, disclosure, or alteration. Data is kept only for as long as necessary for the intended purposes or as required by applicable law.',s6Title:'6. Your choices and rights',s6Body:'You may request information about data concerning you, ask for corrections, or request deletion of certain data where reasonably possible and compatible with our legal and technical obligations.',s7Title:'7. External links and third-party services',s7Body:'Our websites or products may include links to third-party services. Camilore is not responsible for the privacy practices of those external sites or services.',s8Title:'8. Changes',s8Body:'This policy may be updated from time to time. The most recent version will always be posted on this page with the updated date.',s9Title:'9. Contact',s9Body:'For any privacy-related questions, you may contact us at contact@camilore.com.',footerCopy:'© 2026 Camilore Inc. All rights reserved.',footerHome:'Home'},
-      es: {navHome:'Inicio',navPrivacy:'Privacidad',eyebrow:'Confianza, claridad y respeto por tus datos',title:'Política de privacidad',intro:'Esta página explica cómo Camilore Inc. recopila, utiliza, protege y conserva los datos relacionados con su sitio web corporativo, camilore.com.',updated:'Última actualización: 2026-11-09',s1Title:'1. Datos que podemos recopilar',s1Body:'Según el producto utilizado, Camilore puede recopilar datos técnicos necesarios para el funcionamiento adecuado del servicio, como información del dispositivo, información de la aplicación, errores, rendimiento o información proporcionada voluntariamente por el usuario.',s2Title:'2. Cómo se utilizan estos datos',s2Body:'Los datos se utilizan para prestar el servicio, mejorar la estabilidad, corregir errores, comprender el uso general del producto y ofrecer una mejor experiencia al usuario.',s3Title:'3. Jax Max Delta',s3Body:'Esta política no cubre la aplicación Jax Max Delta. Las prácticas de privacidad de Jax Max Delta se describen en',s3Contact:'Preguntas:',s4Title:'4. Compartición de datos',s4Body:'Camilore no vende tus datos personales. Los datos solo pueden compartirse con proveedores técnicos necesarios para el alojamiento, análisis, diagnóstico o funcionamiento correcto del servicio, cuando corresponda.',s5Title:'5. Conservación y seguridad',s5Body:'Tomamos medidas razonables para proteger los datos contra el acceso no autorizado, la pérdida, la divulgación o la alteración. Los datos se conservan solo durante el tiempo necesario para los fines previstos o según lo exija la ley aplicable.',s6Title:'6. Tus opciones y derechos',s6Body:'Puedes solicitar información sobre los datos relacionados contigo, pedir correcciones o solicitar la eliminación de ciertos datos cuando sea razonablemente posible y compatible con nuestras obligaciones legales y técnicas.',s7Title:'7. Enlaces externos y servicios de terceros',s7Body:'Nuestros sitios web o productos pueden incluir enlaces a servicios de terceros. Camilore no es responsable de las prácticas de privacidad de esos sitios o servicios externos.',s8Title:'8. Cambios',s8Body:'Esta política puede actualizarse de vez en cuando. La versión más reciente siempre se publicará en esta página con la fecha actualizada.',s9Title:'9. Contacto',s9Body:'Para cualquier pregunta relacionada con la privacidad, puedes escribirnos a contact@camilore.com.',footerCopy:'© 2026 Camilore Inc. Todos los derechos reservados.',footerHome:'Inicio'}
-    };
-    function setLanguage(lang) { const dict = translations[lang] || translations.fr; document.documentElement.lang = lang; document.querySelectorAll('[data-i18n]').forEach((el) => { const key = el.getAttribute('data-i18n'); if (dict[key]) el.textContent = dict[key]; }); document.querySelectorAll('[data-jmd-path]').forEach((a) => { a.href = 'https://jaxmaxdelta.com/' + lang + '/' + a.dataset.jmdPath; }); document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang)); localStorage.setItem('camilore-lang', lang); }
-    document.querySelectorAll('.lang-btn').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
-    const savedLang = localStorage.getItem('camilore-lang'); const browserLang = navigator.language.slice(0, 2); const initialLang = translations[savedLang] ? savedLang : (translations[browserLang] ? browserLang : 'fr'); setLanguage(initialLang);
-  </script>
+  <p><a href="/privacy.html">Camilore Inc.</a></p>
 </body>
 </html>
